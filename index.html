@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplex.in - Your Online Marketplace</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for logo text (thin, modern) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
-    <div class="container header-flex">
-       <div class="logo">
-    <img src="/logoo.png" alt="Marketplex.in Logo" class="marketplex-logo" />
-    <div class="logo-text-container">
-        <span class="logo-text">Marketplex.in</span>
-        <span class="logo-tagline">Premium good on lowest rate</span>
-    </div>
-</div>
-
-
-
-        <nav class="navbar">
-            <select id="navbarCategoryFilter" class="navbar-filter">
-                <option value="all">All</option>
-                <option value="seeds">Plant Seeds</option>
-                <option value="washing-machines">Washing Machines</option>
-                <option value="electronics">Electronics</option>
-                <option value="fashion">Fashion</option>
-                <option value="home">Home & Garden</option>
-                <option value="books">Books</option>
-                <option value="sports">Sports</option>
-                <option value="other">Other</option>
-            </select>
-            <button id="addProductBtn" class="btn-primary">+ Add Product</button>
-        </nav>
-    </div>
-</header>
-
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="/logoo.png" alt="Marketplex.in Logo" class="marketplex-logo" />
+                <div class="logo-text-container">
+                    <span class="logo-text">Marketplex.in</span>
+                    <span class="logo-tagline">Premium good on lowest rate</span>
+                </div>
+            </div>
+            <nav class="navbar-right">
+                <select id="navbarCategoryFilter" class="navbar-filter">
+                    <option value="all">All</option>
+                    <option value="seeds">Plant Seeds</option>
+                    <option value="washing-machines">Washing Machines</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home & Garden</option>
+                    <option value="books">Books</option>
+                    <option value="sports">Sports</option>
+                    <option value="other">Other</option>
+                </select>
+                <button id="addProductBtn" class="btn-primary">+ Add Product</button>
+                <a href="#" class="navbar-btn">Sign Up</a>
+                <a href="#" class="navbar-btn">Log In</a>
+                <a href="#" class="navbar-cart">
+                    🛒 <span class="cart-text">Cart</span> <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -85,12 +88,10 @@
                     <label for="productName">Product Name *</label>
                     <input type="text" id="productName" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="productPrice">Price (NPR) *</label>
                     <input type="number" id="productPrice" step="0.01" min="0" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="productCategory">Category *</label>
                     <select id="productCategory" required>
@@ -103,22 +104,18 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
-                
                 <div class="form-group">
                     <label for="productDescription">Description *</label>
                     <textarea id="productDescription" rows="4" required></textarea>
                 </div>
-                
                 <div class="form-group">
                     <label for="productImage">Image URL</label>
                     <input type="url" id="productImage" placeholder="https://example.com/image.jpg">
                 </div>
-                
                 <div class="form-group">
                     <label for="sellerName">Seller Name *</label>
                     <input type="text" id="sellerName" required>
                 </div>
-                
                 <div class="form-actions">
                     <button type="submit" class="btn-primary">Save Product</button>
                     <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
@@ -127,20 +124,19 @@
         </div>
     </div>
 
-    <!-- Foooter -->
-   <footer>
-    <div class="container">
-        <h2 class="footer-title">Marketplex.in — The Marketplace For Everything</h2>
-        <p class="footer-tagline">From plant seeds to washing machines, Marketplex.in is your one-stop shop for all things amazing!</p>
-        <div class="footer-social">
-    <a href="https://www.facebook.com/profile.php?id=100091064561491" target="_blank" class="footer-social-btn">Facebook</a>
-    <a href="https://www.instagram.com/krimy.7z" target="_blank" class="footer-social-btn">Instagram</a>
-    <a href="https://www.linkedin.com/in/krishna-nishad/" target="_blank" class="footer-social-btn">LinkedIn</a>
-</div>
-        <p class="footer-copyright">&copy; 2025 Marketplex.in - All rights reserved</p>
-    </div>
-</footer>
-
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h2 class="footer-title">Marketplex.in — The Marketplace For Everything</h2>
+            <p class="footer-tagline">From plant seeds to washing machines, Marketplex.in is your one-stop shop for all things amazing!</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=100091064561491" target="_blank" class="footer-social-btn">Facebook</a>
+                <a href="https://www.instagram.com/krimy.7z" target="_blank" class="footer-social-btn">Instagram</a>
+                <a href="https://www.linkedin.com/in/krishna-nishad/" target="_blank" class="footer-social-btn">LinkedIn</a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Marketplex.in - All rights reserved</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
