@@ -76,11 +76,11 @@ function loadProducts() {
     },
     {
         id: '3',
-        name: 'Wireless Headphones',
-        price: 4000,
-        category: 'electronics',
-        description: 'High-quality wireless headphones with noise cancellation.',
-        image: '52b329e0dbba570fe65a198e9952dda6.jpg', // <- local file
+        name: 'Running Shoes',
+        price: 3450,
+        category: 'sports',
+        description: 'Comfortable running shoes for all terrains.',
+        image: 'product5.webp', // <- local file
         seller: 'TechStore',
         createdAt: new Date().toISOString()
     },
@@ -92,6 +92,16 @@ function loadProducts() {
         description: 'High quality fairness lotion for gentle and smooth skin.',
         image: 'product.jpg',
         seller: 'Krimy',
+        createdAt: new Date().toISOString()
+    },
+    {
+        id: '5',
+        name: 'Wireless Headphones',
+        price: 4000,
+        category: 'electronics',
+        description: 'High-quality wireless headphones with noise cancellation.',
+        image: '52b329e0dbba570fe65a198e9952dda6.jpg', // <- local file
+        seller: 'TechStore',
         createdAt: new Date().toISOString()
     }
 
