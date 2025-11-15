@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplex.in - Your Online Marketplace</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for logo text (thin, modern) -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +20,7 @@
             </div>
             <nav class="navbar-right">
                 <select id="navbarCategoryFilter" class="navbar-filter">
-                    <option value="all">All</option>
+                    <option value="all">Choose product types</option>
                     <option value="seeds">Plant Seeds</option>
                     <option value="washing-machines">Washing Machines</option>
                     <option value="electronics">Electronics</option>
@@ -124,6 +123,62 @@
         </div>
     </div>
 
+    <!-- Checkout Section -->
+    <section class="checkout-section" id="checkoutSection" style="display:none;">
+        <div class="container">
+            <h3>Checkout</h3>
+            <div id="checkoutCart" class="checkout-cart"></div>
+            <div id="checkoutSummary" class="checkout-summary"></div>
+            <form id="checkoutForm" class="checkout-form">
+                <div class="form-group">
+                    <label for="buyerName">Your Name *</label>
+                    <input type="text" id="buyerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyerAddress">Shipping Address *</label>
+                    <textarea id="buyerAddress" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="buyerContact">Contact Number *</label>
+                    <input type="text" id="buyerContact" required>
+                </div>
+                <button type="submit" class="btn-primary">Proceed to Payment</button>
+            </form>
+            <div id="orderConfirmation" class="order-confirmation"></div>
+        </div>
+    </section>
+
+    <!-- Payment Modal (Fake Gateway) -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content payment-modal-content">
+            <span class="close" id="closePaymentModal">&times;</span>
+            <h2>Choose Payment Method</h2>
+            <div class="payment-options">
+                <button class="btn-primary payment-btn">Credit/Debit Card</button>
+                <button class="btn-primary payment-btn">eSewa</button>
+                <button class="btn-primary payment-btn">Khalti</button>
+                <button class="btn-primary payment-btn">Cash on Delivery</button>
+            </div>
+            <div class="fake-gateway">
+                <img src="https://img.icons8.com/color/64/000000/bank-card-front-side.png"/>
+                <p style="margin-top: 1em; color: #888;">(Choose your payment option.)</p>
+                <button id="fakePayBtn" class="btn-primary">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content" style="max-width:320px; text-align:center">
+        <span class="close" id="closeLoginModal">&times;</span>
+        <h2>Admin Login</h2>
+        <input id="loginUsername" type="text" placeholder="Username" style="margin:10px;width:90%"><br>
+        <input id="loginPassword" type="password" placeholder="Password" style="margin:10px;width:90%">
+        <button id="loginSubmitBtn" class="btn-primary" style="width:100%;margin:10px auto">Login</button>
+        <div id="loginStatus" style="color:#e74c3c; font-size:.93rem;margin-top:5px"></div>
+    </div>
+</div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -134,7 +189,7 @@
                 <a href="https://www.instagram.com/krimy.7z" target="_blank" class="footer-social-btn">Instagram</a>
                 <a href="https://www.linkedin.com/in/krishna-nishad/" target="_blank" class="footer-social-btn">LinkedIn</a>
             </div>
-            <p class="footer-copyright">&copy; 2025 Marketplex.in - All rights reserved</p>
+            <p class="footer-copyright">&copy; 2025 Marketplex.in by Krishna - All rights reserved</p>
         </div>
     </footer>
 
